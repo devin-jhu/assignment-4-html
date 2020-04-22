@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="trapezoid area">
+    <meta name="keywords" content="trapezoid,area">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle Area and circumfrance</title>
+  </head>
+  <body>
+    <p>area and circumference of a circle</p>
+    Area: <input type="number" id="diameter"><br>
+    <button onclick="area()">calculate</button><br>
+    Circumfrance: <input type="number" id="diametertwo"><br>
+     <button onclick="circumference()">calculate</button><br>
+    <p>Type the diameter of your circle into either of the two text boxes depending on what calculation you want and then press the according calculate button.</p>
+    <script>
+      let diameter;
+      let radius;
+      let circleArea;
+      let circleCircumference;
+      function area() {
+      diameter= document.getElementById("diameter").value;
+      radius= diameter/2;
+      circleArea= 3.14*(radius*radius)
+      alert ("The circle area is " + circleArea);
+      }
+      function circumference() {
+      diameter= document.getElementById("diametertwo").value; 
+      circleCircumference= diameter*3.14;
+      alert ("The circle circumference is " + circleCircumference);
+      }
+    </script>
+  </body>
+</html>
